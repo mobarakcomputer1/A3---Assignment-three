@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(#09015f  , #480532);
+    color: white;
+  
+}
+nav{
+    width: 90%;
+    padding:  25px 70px;
+    padding-bottom: 0;
+    text-align: end;
+    
+}
+main{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+.exp{
+    width: 80%;
+    margin-bottom: 10px;
+}
+section{
+     
+    width: 90%;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center
+    
+}
+.card{
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.363);
+    width: 20%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px ;
+
+}
+ 
+.card .imgD{
+    width: 80%;
+    border: 2px solid white;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.card img{
+     width: 100%;
+     height: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.card img:hover{
+    
+    height: 110%;
+    width: 110%;
+}
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 70%);
+    
+    gap:15px;
+}
+.cardInfo p{
+    width: 80%;
+    display: flex;
+    padding-top: 5px;
+    justify-content: space-between;
+    align-self: center;
+}
+.cardInfo button{
+    width: 70%;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid rgb(198, 140, 253);
+    color: white;
+    align-self: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.cardInfo button:hover{
+     background: #e4f9fc;
+     border-color: #c1bcf7;
+     color: black;
+}
+.d1{
+   
+    position: relative;
+    bottom: -95%;
+} 
+ 
+.d3{
+   position: relative;
+    bottom: -80%;
+   
+}
+ 
+
+.dout{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    padding: 10px;
+}
+.dout span{
+    display: inline-block;
+    padding: 4px;
+    border-radius: 50%;
+    background: rgb(153, 153, 153);
+}
+.dout p{
+    display: flex;
+    justify-content: space-between;
+    
+}
