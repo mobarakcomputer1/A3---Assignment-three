@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    color: white;
+     
+}
+
+/* HTML: <div class="curved-edge"></div> */
+.curved-edge {
+    --c: 220px; /* control the curvature (works with percentage) */
+    height: 70%;
+    aspect-ratio: 3/2;
+    /* you can also update the 60%  */
+    mask: radial-gradient(60% var(--c) at top,#0000 calc(100% - 1px),#000);
+    background: #1c171e;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+
+}
+main{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(walp.jpeg);
+    background-size: cover;
+    background-position: center   ;
+    position: relative;
+
+    
+}
+.manki{
+    height: 480px;
+    position: relative;
+    z-index: 2;
+
+}
+.textUndar{
+    position: absolute;
+    top: 15%;
+} 
+.textUndar p{
+    width: 100%;
+    
+    font-size: 1.4rem;
+    font-family: sans-serif;
+}
+.textUndar .right{
+    text-align: end;
+}
+.textUndar h1{
+    font-size: 4rem;
+    font-family: cursive;
+}
+
+nav{
+    display: flex;
+    width: 80%;
+    
+    align-self: center;
+    justify-content: space-between;
+    align-items:center;
+}
+nav img{
+    width: 200px;
+    height: 40px;
+}
+nav .nav_centr{
+     display: flex;
+     gap: 35px;
+     color: rgba(255, 255, 255, 0.795);
+}
+.nav_centr p{
+    padding: 20px 10px 0px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    
+}
+.nav_centr .active{
+    background:linear-gradient( rgba(167, 138, 7, 0.918), rgba(255, 174, 0, 0.178));
+}
+.nav_centr p:hover{
+    background:linear-gradient( rgba(167, 138, 7, 0.918), rgba(255, 174, 0, 0.178));
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.icon i{
+    display: inline-block;
+   font-size: 2rem;
+   color: rgba(255, 255, 255, 0.788);
+   transition: 0.3s;
+   cursor: pointer;
+}
+.icon i:hover{
+    transform: translateX(5px);
+    transform: scale(1.2);
+    color: rgba(250, 204, 1, 0.986);
+}
+.mint{
+    padding: 15px 40px;
+    position: absolute;
+    top: 40%;
+    border-radius: 5px;
+    border: none;
+    z-index: 100;
+    background-image: url(btnImg-removebg-preview.png);
+    background-size: cover;
+    cursor: pointer;
+    transition: .3s;
+}
+.mint:hover{
+    transform: scale(1.2);
+}
+.textUppar{
+    position: absolute;
+    bottom:0;
+    z-index: 100;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    
+
+    
+}
+.textUppar p{
+    display: flex;
+    gap: 90px;
+}
+.textUppar h5{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.arrow{
+    position: absolute;
+    top: -15%;
+    transform: rotate(270deg);
+    width: 50px;
+     left: 600px;
+    z-index: 100;
+    height: 190%;
+    
+}

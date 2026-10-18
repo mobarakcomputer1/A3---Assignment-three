@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #f9f1e8;
+     
+}
+
+nav{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+}
+nav img{
+    width: 250px;
+    height:60px;
+}
+.menu{
+    display: flex;
+    gap: 55px;
+    font-size: small;
+    font-weight: 800;
+} 
+.menu span{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.menu .actv{
+     
+    color: #135e00;
+    padding-bottom: 3px;
+    border-bottom: 2px solid;
+    
+}
+.menu span:hover{
+    color: #135e00;
+    padding-bottom: 3px;
+    border-bottom: 2px solid;
+    transform: translateY(-5px);
+}
+.searchD{
+    border: 2px solid  #135e00c5;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+}
+.searchD input{
+    outline: none;
+    border: none;
+    border-right: 2px solid #135e00c5;
+    background: transparent;
+    
+}
+.ri-search-line{
+    display: inline-block;
+    color:  #dba801;
+    font-size: 1.5rem;
+}
+.searchD .ri-shopping-bag-fill{
+    font-size: 1.5rem;
+    color: rgb(36, 36, 36);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.searchD .ri-shopping-bag-fill:hover{
+    scale: 1.1;
+    color: #135e00;
+    transform: translateY(-5px);
+}
+
+.searchD span{
+    padding: 2px 5px;
+    border-radius: 10px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    font-size: small;
+    background: rgb(177, 10, 10);
+    color: white;
+}
+main{
+    display: flex;
+    padding:20px 3%;
+
+}
+.proinfo{
+    width: 45%;
+    padding-top: 50px; ;
+}
+.proinfo h6{
+    padding: 5px 10px;
+    border: 1.5px solid #65932f;
+    background: #5a86266c;
+    border-radius: 20px ;
+    width: max-content;
+    color: #264700;
+    margin-bottom: 30px;
+}
+.arow{
+    width: 80%;
+    height: 40px;
+}
+.proinfo h1{
+    font-size: 3.6rem;
+    margin-bottom: 10px;
+    
+}
+.proinfo h1 span{
+    color: #0a2e00;
+}
+.proinfo p{
+    color: rgba(31, 31, 31, 0.952);
+}
+.btnRow{
+     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    margin: 30px 0;
+    padding-right: 20%;
+
+    
+}
+ 
+/* .btnRow i{
+    font-size: 1rem;
+   
+} */
+.addto{
+    background: #000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    gap:15px;
+    padding-right: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.addto:hover{
+    background: #054103;
+    transform: translateY(-5px);
+}
+.addto i{
+    color: rgb(3, 3, 3);
+    font-size: 1.3rem;
+    background: #d3971e;
+     padding: 8px;
+    border-radius: 50%;
+    
+}
+.qtt{
+    display: flex;
+    border: 1.5px solid #929292;
+    gap: 20px;
+     font-weight: 600;
+    font-size: 1.3rem  ;
+    padding: 10px;
+    border-radius: 20px;
+    background: #fdfdfd;
+    box-shadow: 0 5px 10px -5px black;
+    
+
+}
+.qtt span{
+    color: rgb(189, 2, 2);
+    
+}
+.qtt .ri-add-large-line{
+    color: #135e00;
+}
+.qtt i{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.qtt i:hover{
+    transform: translateY(-5px);
+     
+}
+.shortInfo{
+    
+    display: flex;
+    gap:15px;
+}
+.shortInfo .mBottom{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.mBottom strong{
+    display: inline-block;
+    padding: 6px;
+    border: 1.5px solid rgb(41, 131, 0);
+    border-radius: 50%;
+    background: rgba(56, 201, 20, 0.055);
+    font-size: 1.2rem;
+}
+.mBottom h4{
+    font-size:0.9rem;
+    margin-bottom: 5px;
+
+}
+.mBottom p{
+    font-size: small;
+    line-height: 17px;
+    color: rgba(39, 39, 39, 0.884);
+    
+}
+.product{
+    width: 500px;
+    height: 500px;
+    
+}
+.extraInfo{
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    top: 120px;
+    width:  210px;
+} 
+.extraInfo strong{
+    border: none;
+}
+.chili strong{
+    background: rgb(0, 56, 0);
+}
+.beef strong{
+    background: darkred;
+}
+.sauce strong{
+    background: darkgoldenrod;
+}
+footer{
+    background: #0e4b2f;
+    margin: 10px 3%;
+
+    padding: 15px 2%;
+    border-radius: 20px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    
+}
+.ftText{
+    color: white;
+    font-size: 1rem;
+}
+.ftText span{
+    display:block;
+    width: 50px;
+    border:2px solid darkgoldenrod;
+    border-radius: 19%;
+    margin-top: 10px;
+    
+}
+.btnR{
+    display: flex;
+    gap: 20px;
+}
+.btnR button{
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 20px;
+    font-size: 1.4rem;
+
+}
+.ftsec{
+    width: 400px;
+    display: flex;
+    gap: 20px;
+    height: 135px;
+    background: rgb(240, 255, 253);
+    border-radius: 10px;
+    padding: 15px 20px;
+    position: relative;
+}
+.ftsec .imgP{
+    width: 50%;
+   
+    height: 100%;
+}
+.proIn h3{
+    font-size: 1rem;
+    letter-spacing: -0.9px;
+    white-space: nowrap;
+}
+.proIn p{
+    justify-content: space-between;
+    display: flex;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+.proIn h4{
+    margin-top: 5px;
+    font-size: 1.3rem;
+}
+.proIn button{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: none;
+    background: darkred;
+    color: white;
+}
+.ftsec img{
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 150px;
+    left: 10px;
+    
+}
+footer button{
+    cursor: pointer;
+    transition: 0.3s;
+}
+footer button:hover{
+    scale: 1.1;
+    transition: .2s;
+
+}
+.ftsec button:hover{
+    background: rgb(24, 85, 0);
+}
+.ftText button:hover{
+    background: #2fc900;
+}
